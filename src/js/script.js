@@ -3,40 +3,49 @@ alert("Bem-vindo!");
 
 //----------------------------------------------------//
 
-// Define um array com os caminhos das imagens para o slide show
-/*let imagens = ['../img/nikeAirforce.png', '../img/nikeAirmax.jpeg', '../img/adidasAzul.jpeg', '../img/nikeAirmax1.png'];
-let index = 0; // Índice da imagem atual
-let time = 3000; // Tempo de transição entre imagens em milissegundos
+let slideIndex = 1;
+let slideInterval;
 
-// Função para o slide show
-function slideShow(){
-    // Define a imagem do elemento com o ID 'imgbanner' para a imagem atual
-    document.getElementById("imgbanner").src = imagens[index];
-    index++; // Incrementa o índice para a próxima imagem
+// Inicializa o slideshow
+showSlides(slideIndex);
 
-    // Verifica se atingiu o final do array de imagens
-    if(index == imagens.length){
-        index = 0; // Reinicia o índice para o início do array
-    }
+// Define o intervalo para mudar automaticamente as imagens a cada 4 segundos
+startAutoSlide();
 
-    // Configura um temporizador para chamar recursivamente a função slideShow após o tempo especificado
-    setTimeout(slideShow, time);
+// Função para avançar/navegar para slides anteriores
+function plusSlides(n) {
+  clearInterval(slideInterval);
+  showSlides(slideIndex += n);
+  startAutoSlide();
 }
 
-// Inicia o slide show
-slideShow();*/
+// Função para ir para um slide específico
+function currentSlide(n) {
+  clearInterval(slideInterval);
+  showSlides(slideIndex = n);
+  startAutoSlide();
+}
 
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
+// Função para mostrar o slide atual
+function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
+  dots[slideIndex-1].className += " active";
+}
+
+// Função para iniciar o autoplay
+function startAutoSlide() {
+  slideInterval = setInterval(() => {
+    plusSlides(1);
+  }, 4000); // Troca a imagem a cada 4 segundos
 }

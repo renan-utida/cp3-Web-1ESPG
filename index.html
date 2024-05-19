@@ -8,7 +8,7 @@
     <title>Home - Renan's Footwear</title>
 </head>
 <body>
-    <div class="logo">
+    <div id="logo">
         <a href="index.html" class="marca">RENAN'S FOOTWEAR</a>
         <a href="index.html">
             <img src="./src/img/logo-footwear.png" alt="logo" id="imglogo">
@@ -32,30 +32,58 @@
         <div class="mySlides fade">
             <div class="numbertext">1 / 4</div>
             <img src="./src/img/nikeAirforce.png" style="width:100%">
-            <div class="text">Caption Text</div>
+            <div class="text">Air Jordan 1 Retro High "Off-White University Blue"</div>
         </div>
   
         <div class="mySlides fade">
             <div class="numbertext">2 / 4</div>
-            <img src="./src/img/nikeAirmax.jpeg" style="width:100%">
-            <div class="text">Caption Two</div>
+            <img src="./src/img/nikeAirmaxINTRLK.png" style="width:100%">
+            <div class="text">Tênis Nike Air Max INTRLK Lite Branco</div>
         </div>
   
         <div class="mySlides fade">
             <div class="numbertext">3 / 4</div>
             <img src="./src/img/adidasAzul.jpeg" style="width:100%">
-            <div class="text">Caption Three</div>
+            <div class="text">Tenis Adidas Coreracer</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">4 / 4</div>
             <img src="./src/img/nikeAirmax1.png" style="width:100%">
-            <div class="text">Caption Four</div>
+            <div class="text">Nike Air Max 97 TT Premium 'Pull Tab'</div>
         </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </section>
-  
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <section class="novidade-nike">
+
+        <h2>Nike 2024</h2>
+        <h1>NOVA COLEÇÃO DE CALÇADOS JÁ ESTÁ</h1>
+        <h1>DISPONIVEL NO RENAN'S FOOTWEAR</h1>
+
+        <p>Esta coleção apresenta os mais recentes designs e</p> 
+        <p>tecnologias da Nike, oferecendo conforto incomparável,</p>
+        <p>estilo e desempenho.</p>
+
+        <a href=""><button id="buttons">Ver Coleção</button></a>
+    </section>
+
+
+
+
     <!--JAVASCRIPT EXTERNO-->
     <script src="./src/js/script.js"></script>
 
 </body>
-</html>
+</html>      
