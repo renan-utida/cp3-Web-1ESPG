@@ -5,32 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS EXTERNO-->
     <link rel="stylesheet" href="./src/css/style.css">
-
-    <title>Renan's Footwear</title>
+    <title>Home - Renan's Footwear</title>
 </head>
 <body>
-    
-    <h1 class="topo">RENAN'S FOOTWEAR</h1>
-    
+    <div class="logo">
+        <a href="index.html" class="marca">RENAN'S FOOTWEAR</a>
+        <a href="index.html">
+            <img src="./src/img/logo-footwear.png" alt="logo" id="imglogo">
+        </a>
+    </div>     
     <header>
-        <nav id="texto">
-            <a href="index.html">
-                <img src="./src/img/logo-footwear.png" alt="logo" id="logo">
-            </a>
-            
-            <ul>
+        <nav>
+            <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
+        <a href="login.html"><button id="login_btn">Login</button></a>
+    </header>
 
-     </header>
-    
+    <!-- Slideshow container -->
+    <section class="slideshow-container">
 
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="./src/img/nikeAirforce.png" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+  
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="./src/img/nikeAirmax.jpeg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+  
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./src/img/adidasAzul.jpeg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
 
-
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="./src/img/nikeAirmax1.png" style="width:100%">
+            <div class="text">Caption Four</div>
+        </div>
+    </section>
+  
     <!--JAVASCRIPT EXTERNO-->
     <script src="./src/js/script.js"></script>
 

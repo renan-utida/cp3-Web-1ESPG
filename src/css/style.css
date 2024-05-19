@@ -2,6 +2,8 @@
     --text-color1: #0c012a;
     --text-color2: #ffffff;
     --text-color3: #190354;
+    --text-color4: #164952;
+    --bg-color1: #7eadea;
 }
 
 *{
@@ -10,48 +12,187 @@
     box-sizing: border-box;
     font-family: serif;
     text-decoration: none;
-    list-style: none;
 }
-
+  
 header {
-    position: fixed;
-    width: 100%;
-}
-
-.topo{
-    padding: 7px;
-    width: 100%;
-    height: 40px;
-    font-size: 25px;;
-    text-align: center;
-    color: white;
-    background-color: var(--text-color1);
-}
-
-nav{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    position: fixed;
     width: 100%;
     height: 60px;
     font-size: 25px;
-    color: var(--text-color2);
-    background-color: var(--text-color3);
+    /*color: var(--text-color2);*/
+    background-color: var(--text-color1);
+    box-shadow: 1px 1px 4px black;
 }
 
-#logo{
-    width: 100px;
-    height: 60px;
-    left: 10px;
+.logo {
+    position: absolute;
+    left: 30px;
+    display: flex;
+    align-items: center;
     z-index: 10; /* Garante que o logo fique acima dos outros elementos */
 }
 
+.marca {
+    padding: 7px 0px 7px 15px;
+    font-size: 25px;
+    color: var(--text-color2);
+    font-weight: 800;
+}
+
+#imglogo{
+    width: 100px;
+    height: 55px;
+}    
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links a {
+    position: relative;
+    font-size: 24px;
+    color: var(--text-color2);
+    font-weight: bold;
+}
+
+.nav_links a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--text-color2);
+    transition: 0.3s;
+}
+
+.nav_links a:hover::before {
+    width: 100%;
+}
+
+#login_btn {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    padding: 6px 18px;
+    background-color: var(--text-color2);
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color4);
+}
+
+#login_btn:hover {
+    background-color: var(--text-color4);
+    color: var(--text-color2);
+}
+
+body{
+    background-color: var(--text-color2);
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1400px;
+    max-height: 550px;
+    position: relative;
+    top: 60px;
+    margin: auto;
+    overflow: hidden; /* Evitar que as imagens ultrapassem o container */
+}
+  
+/* Hide the images by default */
+.mySlides img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+  
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+
+/*#banner{
+    margin: 10px;
+    width: 580px;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgbanner{
+    width: 500px;
+    margin: 20px;
+    height: 500px;
+    display: flex;
+    padding: 10px;
+    top: 190px;
+    justify-content: center;
+    border-radius: 30px;
+}*/
+/*
+#imgbanner{
+    width: 100%;
+    height: 400px;
+}*/
+
+/*.base-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--text-color1);
+}
+*/
+/*
 nav ul {
     display: flex;
     align-items: center;
     gap: 70px;
-
 }
 
 nav ul li a {
@@ -61,6 +202,4 @@ nav ul li a {
 }
 nav ul li a:hover {
     border-bottom: 3px solid var(--text-color1);
-}
-
-
+}*/
