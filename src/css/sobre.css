@@ -114,6 +114,7 @@ header {
 .sobre h1{
     color: var(--text-color1);
     font-size: 40px;
+    font-weight: bold;
 }
 
 .sobre h2{

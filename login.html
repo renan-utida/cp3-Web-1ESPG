@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS EXTERNO-->
-    <link rel="stylesheet" href="./src/css/sobre.css">
+    <link rel="stylesheet" href="./src/css/login.css">
 
-    <title>Sobre</title>
+    <title>Login - Renan's Footwear</title>
 </head>
 <body>
     <div id="logo">
@@ -23,14 +23,55 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-        <a href="login.html"><button id="login_btn">Login</button></a>
     </header>
 
-    <footer>
-        <p>Renan's Footwear - @Todos os direitos reservados</p>
-    </footer>
+    <section class="content">
+        <form>
+            <h1>Login</h1>
+            <p>
+                Usuario:
+                <input type="text" placeholder="Digite seu usuario" id="usuario">
+            </p>
+    
+            <p>
+                Senha:
+                <input type="password" placeholder="Digite sua senha" id="senha">
+            </p>
+            <button onclick="validar()">Login</button>
+    
+        </form>
+    </section>
 
-    <!--SEM JAVASCRIPT NESSA PAGINA-->
+
+    <div class="footer-container">
+        <section class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./src/img/capa-sobreNike.png" alt="Tenis Nike">
+            </div>
+            <div class="mySlides fade">
+                <img src="./src/img/capa-sobreAdidas.png" alt="Tenis Adidas">
+            </div>
+            <div class="mySlides fade">
+                <img src="./src/img/capa-sobreNike2.png" alt="Tenis Nike">
+            </div>
+            <div class="mySlides fade">
+                <img src="./src/img/capa-sobreAdidas1.jpeg" alt="Tenis Adidas">
+            </div>
+            <div class="mySlides fade">
+                <img src="./src/img/capa-sobreNike3.png" alt="Tenis Nike">
+            </div>
+            <div class="mySlides fade">
+                <img src="./src/img/capa-sobreAdidas2.jpeg" alt="Tenis Adidas">
+            </div>
+        </section>
+
+        <footer>
+            <p>Renan's Footwear - @Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <!--JAVASCRIPT EXTERNO-->
+    <script src="./src/js/login.js"></script>
 
 </body>
 </html>
