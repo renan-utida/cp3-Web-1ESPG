@@ -2,7 +2,7 @@
 alert("Bem-vindo!");
 
 //----------------------------------------------------//
-
+//SLIDESHOW AUTOMATIO E MANUAL
 let slideIndex = 1;
 let slideInterval;
 
@@ -51,9 +51,9 @@ function startAutoSlide() {
 }
 
 //-------------------------------------------------------------------//
+//DOUBLE CLICK PARA CORES
 
-
-let colors = ['lightgreen', 'lightblue', 'lightgray'];
+let colors = ['#dfdfdf', '#add8e6', '#9bedd8'];
 let colorIndex = 0;
 
 document.body.style.backgroundColor = colors[colorIndex]; // Define a cor inicial
@@ -65,5 +65,3 @@ document.body.addEventListener('dblclick', function() {
     }
     document.body.style.backgroundColor = colors[colorIndex];
 });
-
-

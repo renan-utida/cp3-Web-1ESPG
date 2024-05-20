@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
-    --text-color1: #0c012a;
+    --text-color1: #15034c;
     --text-color2: #ffffff;
-    --text-color3: #190354;
-    --text-color4: #164952;
+    --text-color3: #230479;
+    --text-color4: #197282;
     --text-color5: #3e3e3e;
     --text-color6: #000000;
     --text-color7: #2c2caa;
-    --bg-color1: #7e89ea;
+    --text-color8: #0f0ffd;
+    --bg-color1: #add8e6;
     --bg-color2: #dfdfdf;
-    --bg-color3: #9b5fe4;
+    --bg-color3: #9bedd8;
 }
 
 *{
@@ -65,7 +67,14 @@ header {
     position: relative;
     font-size: 24px;
     color: var(--text-color2);
-    font-weight: bold;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#selecionado{
+    color: var(--text-color7);
 }
 
 .nav_links a::before {
@@ -93,18 +102,17 @@ header {
     cursor: pointer;
     transition: all 0.9s ease 0s;
     font-size: 20px;
-    font-weight: 500;
-    color: var(--text-color4);
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-color7);
     background-color: var(--text-color2);
 }
 
 #login_btn:hover {
     background-color: var(--text-color4);
     color: var(--text-color2);
-}
-
-body{
-    background-color: var(--bg-color2);
 }
 
 /* Slideshow container */
@@ -204,29 +212,33 @@ body{
     justify-content: space-between;
 }
 
-.novidade-nike {
+.novidade-calcados {
     text-align: center;
     margin: auto;
     width: 650px;
 }
   
-.novidade-nike h2 {
+.novidade-calcados h2 {
     font-size: 28px;
-    font-weight: 545;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--text-color3);
     text-align: left;
-    text-shadow: 5px 5px 10px var(--text-color5);
     padding: 16px;
+    
 }
   
-.novidade-nike h1 {
+.novidade-calcados h1 {
     font-weight: bold;
     font-size: 31px;
     text-align: center;
-    padding: 0 16px;
+    padding: 0 16px 5px 16px;
     color: var(--text-color1);
 }
   
-.novidade-nike p {
+.novidade-calcados p {
     font-weight: normal;
     font-size: 24px;
     text-align: center;
@@ -235,25 +247,33 @@ body{
   
 #buttons {
     font-size: 22px;
-    font-weight: 600;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
     margin: 20px;
     padding: 17px 30px;
     border-radius: 35px;
-    border: 1px solid;
     transition: all 0.9s ease 0s;
     color: var(--text-color2);
-    background-color: var(--text-color3);
+    background-color: var(--text-color7);
+    border: 2px solid var(--text-color1);
 }
 
 #buttons:hover {
-    color: var(--text-color3);
-    background-color: var(--text-color2);
+    color: var(--text-color2);
+    background-color: var(--text-color1);
+    border: 2px solid var(--text-color6);
 }
 
-.colecao-nike h1{
-    font-size: 40px;
+.colecao-calcados h1{
     margin: 150px 0 10px 105px;
-
+    font-size: 40px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--text-color3);
 }
 
 /* Estilos comuns para os cards */
@@ -310,29 +330,26 @@ body{
 
 #comprar{
     font-size: 16px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
     font-weight: bold;
+    font-style: normal;
     margin-top: 14px;
+
     padding: 10px 20px;
+    bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
     border-radius: 6px;
     border: 1px solid var(--text-color5);
     color: var(--text-color2);
-    background-color: blue;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    bottom: 10px;
+    background-color: var(--text-color8);
 }
 
 #comprar:hover {
     color: var(--text-color2);
     background-color: var(--text-color7);
-}
-
-
-/* Estilos para dispositivos móveis */
-@media (max-width: 768px) {
-    .secao4-div-card {
-        width: 100%;
-    }
 }
 
 footer{
