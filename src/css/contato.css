@@ -127,7 +127,8 @@ header {
     padding: 20px;
     margin: auto; /* Centraliza o bloco na tela */
     max-width: 600px; /* Aumenta a largura do bloco */
-    margin-top: 150px; /* Desce o bloco um pouco */
+    margin-top: 100px; /* Desce o bloco um pouco */
+
     border-radius: 20px;
     box-shadow: 1px -1px 60px var(--text-color5);
     background-color: var(--text-color9); /* Cor de fundo escura */

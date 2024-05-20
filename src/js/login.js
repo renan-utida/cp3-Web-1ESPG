@@ -16,7 +16,7 @@ function showSlides() {
     setTimeout(showSlides, 5000); // Troca de imagem a cada 5 segundos
 }
 
-
+//----------------------------------------------------------------//
 //Login e Senha
 
 //VALIDAÇÃO DE LOGIN
@@ -33,3 +33,19 @@ function validar(){
         alert("Usuário ou senha inválidos"); // Exibe um alerta se o usuário ou a senha forem inválidos
     }
 }
+
+//-------------------------------------------------------------------//
+//DOUBLE CLICK PARA CORES
+
+let colors = ['#dfdfdf', '#4c8da2', '#6231a2'];
+let colorIndex = 0;
+
+document.body.style.backgroundColor = colors[colorIndex]; // Define a cor inicial
+
+document.body.addEventListener('dblclick', function() {
+    colorIndex++;
+    if (colorIndex >= colors.length) {
+        colorIndex = 0;
+    }
+    document.body.style.backgroundColor = colors[colorIndex];
+});
