@@ -1,6 +1,7 @@
 // Exibe uma mensagem de boas-vindas
 alert("Bem-vindo!");
 
+
 //----------------------------------------------------//
 //SLIDESHOW AUTOMATIO E MANUAL
 let slideIndex = 1;
@@ -49,6 +50,7 @@ function startAutoSlide() {
     plusSlides(1);
   }, 4000); // Troca a imagem a cada 4 segundos
 }
+
 
 //-------------------------------------------------------------------//
 //DOUBLE CLICK PARA CORES

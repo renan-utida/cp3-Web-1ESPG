@@ -361,6 +361,10 @@ footer{
     align-content: center;
     color: var(--text-color2);
     background-color: var(--text-color1);
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 

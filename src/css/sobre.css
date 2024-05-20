@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
-    --text-color1: #0c012a;
+    --text-color1: #15034c;
     --text-color2: #ffffff;
-    --text-color3: #3f2c73;
-    --text-color4: #164952;
+    --text-color3: #230479;
+    --text-color4: #197282;
     --text-color5: #3e3e3e;
-    --text-color7: #000000;
-    --bg-color1: #7eadea;
-    --bg-color2: #bdbdbd;
+    --text-color6: #000000;
+    --text-color7: #2c2caa;
+    --text-color8: #0f0ffd;
+    --bg-color1: #add8e6;
+    --bg-color2: #dfdfdf;
+    --bg-color3: #9bedd8;
 }
 
 *{
@@ -16,11 +20,7 @@
     font-family: serif;
     text-decoration: none;
 }
-
-body{
-    background-color: var(--bg-color2);
-}
-
+  
 header {
     display: flex;
     justify-content: center;
@@ -29,6 +29,7 @@ header {
     width: 100%;
     height: 60px;
     background-color: var(--text-color1);
+    z-index: 9; /* Adicionado para garantir que o cabeçalho apareça no topo */
 }
 
 #logo {
@@ -36,7 +37,7 @@ header {
     left: 30px;
     display: flex;
     align-items: center;
-    z-index: 10; /* Garante que o logo fique acima dos outros elementos */
+    z-index: 10; /* Adicionado para garantir que o logo apareça acima do cabeçalho */
 }
 
 .marca {
@@ -66,7 +67,14 @@ header {
     position: relative;
     font-size: 24px;
     color: var(--text-color2);
-    font-weight: bold;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#selecionado{
+    color: var(--text-color7);
 }
 
 .nav_links a::before {
@@ -94,8 +102,11 @@ header {
     cursor: pointer;
     transition: all 0.9s ease 0s;
     font-size: 20px;
-    font-weight: 500;
-    color: var(--text-color4);
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-color7);
     background-color: var(--text-color2);
 }
 
@@ -118,13 +129,17 @@ header {
 }
 
 .sobre h2{
-    color: var(--text-color3);
+    color: var(--text-color7);
     padding: 5px 0 15px 0;
-    font-size: 25px;
+    font-size: 24px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .sobre p{
-    color: var(--text-color7);
+    color: var(--text-color6);
     padding: 5px 75px 15px 75px;
     font-size: 18px;
     justify-content: center;
@@ -141,10 +156,14 @@ header {
     color: var(--text-color1);
     padding: 5px 0 15px 0;
     font-size: 32px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .entrega p{
-    color: var(--text-color7);
+    color: var(--text-color6);
     padding: 0px 75px 15px 75px;
     font-size: 18px;
     justify-content: center;
@@ -161,10 +180,14 @@ header {
     color: var(--text-color1);
     padding: 5px 0 15px 0;
     font-size: 32px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .sustentabilidade p{
-    color: var(--text-color7);
+    color: var(--text-color6);
     padding: 0px 75px 15px 75px;
     font-size: 18px;
     justify-content: center;
@@ -181,10 +204,14 @@ header {
     color: var(--text-color1);
     padding: 5px 0 15px 0;
     font-size: 32px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .visao p{
-    color: var(--text-color7);
+    color: var(--text-color6);
     padding: 0px 75px 15px 75px;
     font-size: 18px;
     justify-content: center;
@@ -201,13 +228,31 @@ header {
     color: var(--text-color1);
     padding: 5px 0 15px 0;
     font-size: 32px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .junte-se p{
-    color: var(--text-color7);
+    color: var(--text-color6);
     padding: 0px 75px 15px 75px;
     font-size: 18px;
     justify-content: center;
+}
+
+.junte-se .obrigado{
+    margin-top: 30px;
+    justify-content: center;
+    padding: 0px 75px 15px 75px;
+    
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--text-color7);
 }
 
 #logoInteiro{
@@ -215,18 +260,21 @@ header {
     margin: auto;
     width: 400px;
     height: 300px;
-
 }
 
 footer{
+    bottom: 0;
     height: 30px;
     width: 100%;
     position: relative;
     text-align: center;
     align-content: center;
-    bottom: 0;
     color: var(--text-color2);
     background-color: var(--text-color1);
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 
