@@ -18,7 +18,8 @@
 }
 
 body{
-    background-color: var(--bg-color2);
+    background-color: #121214;
+    height: 100vh;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -85,4 +86,137 @@ header {
 
 .nav_links a:hover::before {
     width: 100%;
+}
+
+h2 {
+    width: 100%;
+    height: 150px;
+    padding-top: 100px; /* Ajuste este valor conforme necessário */
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--text-color2); /* Cor do texto */
+    background-color: #121214;
+}
+
+button {
+    cursor: pointer;
+}
+
+section {
+    background-color: #121214;
+    color: #fff;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--text-color3);
+    width: 100%;
+    max-width: 800px;
+  
+    border: 2px solid #e1e1e6;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .questions-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+  
+.question {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+  
+.answers-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+  
+.answer:disabled {
+    cursor: not-allowed;
+}
+  
+.next-question {
+    margin-top: 32px;
+}
+  
+.button {
+    background-color: #4863f7;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    height: 48px;
+    padding: 0 32px;
+  
+    transition: filter 0.1s;
+}
+  
+.button:not(:disabled):hover {
+    filter: brightness(0.8);
+}
+  
+/* Finish game */
+.final-message {
+    font-size: 20px;
+    text-align: center;
+}
+  
+.final-message span {
+    display: block;
+    margin-top: 8px;
+}
+  
+/* General styles */
+.hide {
+    display: none;
+}
+  
+.correct {
+    background-color: #049b48;
+}
+  
+.incorrect {
+    background-color: #a10101;
+}
+
+.logo-rodape{
+    width: 100%;
+    height: 220px;
+    background-color: #121214;
+}
+
+#logo-maior{
+    height: 100%;
+    width: 220px;
+    bottom: 40px;
+}
+
+footer{
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    color: var(--text-color2);
+    background-color: var(--text-color1);
 }
