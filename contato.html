@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS EXTERNO-->
-    <link rel="stylesheet" href="./src/css/sobre.css">
+    <link rel="stylesheet" href="./src/css/contato.css">
 
     <title>Contato - Renan's Footwear</title>
 </head>
@@ -26,11 +26,53 @@
         <a href="login.html"><button id="login_btn">Login</button></a>
     </header>
 
+    <div class="faleconosco">
+
+        <div class="header">
+
+        </div>
+
+        <form class="form" id="form">
+            <h1>Fale Conosco</h1>
+
+            <div class="form-control">
+                <label for="username">Nome</label>
+                <input type="text" id="username">
+                <i><img src="./src/img/icons8-checkmark-30.png" alt="certo" class="img-sucess"></i>
+                <i><img src="./src/img/icons8-errado-30.png" alt="errado" class="img-error"></i>
+
+                <small>Preencha esse campo!</small>
+
+            </div>
+
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" id="email">
+                <i><img src="./src/img/icons8-checkmark-30.png" alt="certo" class="img-sucess"></i>
+                <i><img src="./src/img/icons8-errado-30.png" alt="errado" class="img-error"></i>
+
+            </div>
+
+            <div class="form-control">
+                <label for="username">Telefone</label>
+                <input type="number" id="telefone">
+                <i><img src="./src/img/icons8-checkmark-30.png" alt="certo" class="img-sucess"></i>
+                <i><img src="./src/img/icons8-errado-30.png" alt="errado" class="img-error"></i>
+
+            </div>
+
+            <button type="submit">ENVIAR</button>
+
+        </form>
+
+    </div>
+
     <footer>
         <p>Renan's Footwear - @Todos os direitos reservados</p>
     </footer>
 
-    <!--SEM JAVASCRIPT NESSA PAGINA-->
+    <!--JAVASCRIPT EXTERNO-->
+    <script src="./src/js/contato.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,202 @@
+:root {
+    --text-color1: #0c012a;
+    --text-color2: #ffffff;
+    --text-color3: #3f2c73;
+    --text-color4: #082537;
+    --text-color5: #3e3e3e;
+    --text-color7: #000000;
+    --bg-color1: #7eadea;
+    --bg-color2: #bdbdbd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--bg-color2);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: var(--text-color1);
+}
+
+#logo {
+    position: fixed;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 10; /* Garante que o logo fique acima dos outros elementos */
+}
+
+.marca {
+    padding: 7px 0px 7px 15px;
+    font-size: 25px;
+    color: var(--text-color2);
+    font-weight: 800;
+}
+
+#imglogo{
+    width: 100px;
+    height: 55px;
+}    
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links a {
+    position: relative;
+    font-size: 24px;
+    color: var(--text-color2);
+    font-weight: bold;
+}
+
+.nav_links a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--text-color2);
+    transition: 0.3s;
+}
+
+.nav_links a:hover::before {
+    width: 100%;
+}
+
+#login_btn {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    padding: 6px 18px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.9s ease 0s;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color4);
+    background-color: var(--text-color2);
+}
+
+#login_btn:hover {
+    background-color: var(--text-color4);
+    color: var(--text-color2);
+}
+
+/* Estilização para o bloco Fale Conosco */
+.faleconosco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--text-color4); /* Cor de fundo escura */
+    color: var(--text-color2); /* Cor do texto branca */
+    padding: 20px;
+    margin: auto; /* Centraliza o bloco na tela */
+    max-width: 600px; /* Aumenta a largura do bloco */
+    margin-top: 150px; /* Desce o bloco um pouco */
+}
+
+.faleconosco .form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.faleconosco .form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color2); /* Cor do texto branca */
+    font-size: 2em;
+}
+
+.faleconosco .form .form-control {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.faleconosco .form .form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.faleconosco .form .form-control input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: var(--text-color7);
+}
+
+.faleconosco .form .form-control .img-sucess,
+.faleconosco .form .form-control .img-error {
+    position: absolute;
+    right: -30px; /* Posiciona o ícone fora da caixa de entrada */
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.faleconosco .form .form-control.error input {
+    border-color: red;
+}
+
+.faleconosco .form .form-control.error .img-error {
+    display: block;
+}
+
+.faleconosco .form .form-control.success .img-sucess {
+    display: block;
+}
+
+.faleconosco .form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--bg-color1); /* Cor de fundo do botão */
+    color: var(--text-color2); /* Cor do texto do botão */
+    cursor: pointer;
+    margin: 15px 0;
+    transition: all 0.6s ease 0s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.faleconosco .form button:hover {
+    background-color: var(--text-color3); /* Cor de fundo do botão */
+}
+
+footer{
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    color: var(--text-color2);
+    background-color: var(--text-color1);
+}
