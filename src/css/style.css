@@ -27,14 +27,15 @@ header {
     width: 100%;
     height: 60px;
     background-color: var(--text-color1);
+    z-index: 9; /* Adicionado para garantir que o cabeçalho apareça no topo */
 }
 
 #logo {
-    position: absolute;
+    position: fixed;
     left: 30px;
     display: flex;
     align-items: center;
-    z-index: 10; /* Garante que o logo fique acima dos outros elementos */
+    z-index: 10; /* Adicionado para garantir que o logo apareça acima do cabeçalho */
 }
 
 .marca {
@@ -197,6 +198,12 @@ body{
     to {opacity: 1}
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .novidade-nike {
     text-align: center;
     margin: auto;
@@ -243,6 +250,25 @@ body{
     background-color: var(--text-color2);
 }
 
+.colecao-nike h1{
+    font-size: 40px;
+    margin: 150px 0 10px 105px;
+
+}
+
+/* Estilos comuns para os cards */
+.secao4 {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.secao4-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
 .card {
 	background-color: #f2f2f2;
 	border-radius: 15px;
@@ -278,7 +304,7 @@ body{
 
 .card img {
 	width: 100%;
-	height: auto;
+	height:250px;
 	margin-bottom: 20px;
 }
 
@@ -293,6 +319,7 @@ body{
     background-color: blue;
     cursor: pointer;
     transition: all 0.5s ease;
+    bottom: 10px;
 }
 
 #comprar:hover {
@@ -300,19 +327,6 @@ body{
     background-color: var(--text-color7);
 }
 
-/* Estilos comuns para os cards */
-.secao4 {
-    margin: 0;
-    font-family: Helvetica, sans-serif;
-}
-
-.secao4-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-    text-align: center;
-}
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
@@ -321,5 +335,15 @@ body{
     }
 }
 
+footer{
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    color: var(--text-color2);
+    background-color: var(--text-color1);
+}
 
 

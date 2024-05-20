@@ -1,51 +1,55 @@
-const form = document.getElementById("form");
-const email = document.getElementById("email");
-const username = document.getElementById("username");
+const form = document.getElementById('form')
+const email = document.getElementById('email')
+const username = document.getElementById('username')
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
 
-    checkInputs();
-});
+    checkInputs()
+})
 
 function checkInputs() {
-    const usernameValue = username.value.trim();
-    const emailValue = email.value.trim();
-    const telefoneValue = telefone.value.trim();
+    const usernameValue = username.value.trim()
+    const emailValue = email.value.trim()
+    const telefoneValue = telefone.value.trim()
 
-    if (usernameValue === "") {     //mostrar que esta vazio
-        errorValidation(username, "Preencha esse campo!");
+    if (usernameValue === '') {     //mostrar que esta vazio
+
+        errorValidation(username, 'Preencha esse campo!')
     } else {
-        successValidation(username);
+        successValidation(username)
+    }
+    
+
+    if (emailValue === '') {        //mostrar que esta vazio
+
+        errorValidation(email, 'Preencha esse campo!')
+    } else {
+        successValidation(email)
     }
 
-    if (emailValue === "") {        //mostrar que esta vazio
-        errorValidation(email, "Preencha esse campo!");
-    } else {
-        successValidation(email);
-    }
 
-    if (telefoneValue === "") {     //mostrar que esta vazio
-        errorValidation(telefone, "Preencha esse campo!");
+    if (telefoneValue === '') {     //mostrar que esta vazio
+        errorValidation(telefone, 'Preencha esse campo!')
     } else {
-        successValidation(telefone);
+        successValidation(telefone)
     }
 }
 
 function errorValidation(input, message){
     const formControl = input.parentElement;
 
-    const small = formControl.querySelector("small");
+    const small = formControl.querySelector('small')
 
-    small.innerText = message;
+    small.innerText = message
 
-    formControl.className = 'form-control error';
+    formControl.className = 'form-control error'
 
 }
 
 function successValidation(input){
     const formControl = input.parentElement;
     
-    formControl.className = 'form-control success';
+    formControl.className = 'form-control success'
 }
 
