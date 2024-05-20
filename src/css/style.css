@@ -4,8 +4,11 @@
     --text-color3: #190354;
     --text-color4: #164952;
     --text-color5: #3e3e3e;
-    --bg-color1: #7eadea;
-    --bg-color2: #e8e8e8;
+    --text-color6: #000000;
+    --text-color7: #2c2caa;
+    --bg-color1: #7e89ea;
+    --bg-color2: #dfdfdf;
+    --bg-color3: #9b5fe4;
 }
 
 *{
@@ -100,7 +103,7 @@ header {
 }
 
 body{
-    background-color: var(--bg-color1);
+    background-color: var(--bg-color2);
 }
 
 /* Slideshow container */
@@ -240,121 +243,83 @@ body{
     background-color: var(--text-color2);
 }
 
-#carousel-card{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--bg-color2);
+.card {
+	background-color: #f2f2f2;
+	border-radius: 15px;
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin: 15px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+    transition: all 0.5s ease;
 }
 
-.slide-container{
-    max-width: 1120px;
-    width: 100%;
-    background-color: grey;
-    padding: 40px 0;
+.card:hover {
+    transform: scale(1.1);
+    z-index: 1;
 }
 
-.slide-content{
-    margin: 0 40px;
+.card h2 {
+    font-family: helvetica;
+	font-size: 24px;
+	margin-bottom: 10px;
 }
 
-.card{
-    width: 320px;
-    border-radius: 25px;
-    background-color: var(--text-color2);
+.card p {
+    font-family: helvetica;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
 }
 
-.image-content, .card-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-}
-
-.image-content{
-    position: relative;
-    row-gap: 5px;
-}
-
-.overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--text-color3);
-    border-radius: 25px 25px 0 25px;
-}
-
-.card-image{
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: var(--text-color2);
-    padding: 3px;  
-}
-
-.card-image .card-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid var(--text-color5);
-}
-
-.item{
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.descricao{
-    font-size: 14px;
-    color: var(--text-color5);
-    text-align: center;
+.card img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
 }
 
 #comprar{
     font-size: 16px;
-    padding: 8px 16px;
-    margin: 14px;
-    color: var(--text-color2);
-    background-color: var(--text-color3);
-    border: 1px solid var(--text-color4);
+    font-weight: bold;
+    margin-top: 14px;
+    padding: 10px 20px;
     border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.9s ease 0s;
-}
-
-#comprar:hover{
-    color: var(--text-color3);
-    background-color: var(--bg-color2);
-}
-
-
-
-
-/*.base-header{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    background-color: var(--text-color1);
-}
-*/
-/*
-nav ul {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-}
-
-nav ul li a {
+    border: 1px solid var(--text-color5);
     color: var(--text-color2);
-    font-size: 1.2rem;
-    transition: all 0.1s ease;
+    background-color: blue;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
-nav ul li a:hover {
-    border-bottom: 3px solid var(--text-color1);
-}*/
+
+#comprar:hover {
+    color: var(--text-color2);
+    background-color: var(--text-color7);
+}
+
+/* Estilos comuns para os cards */
+.secao4 {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.secao4-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .secao4-div-card {
+        width: 100%;
+    }
+}
+
+
+

@@ -50,4 +50,6 @@ function startAutoSlide() {
   }, 4000); // Troca a imagem a cada 4 segundos
 }
 
+//-------------------------------------------------------------------//
+
 
