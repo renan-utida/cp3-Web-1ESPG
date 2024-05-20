@@ -1,7 +1,7 @@
 //-------------------------------------------------------------------//
 //DOUBLE CLICK PARA CORES
 
-let colors = ['#dfdfdf', '#add8e6', '#9bedd8'];
+let colors = ['#dfdfdf', '#4c8da2', '#54b5d8'];
 let colorIndex = 0;
 
 document.body.style.backgroundColor = colors[colorIndex]; // Define a cor inicial
